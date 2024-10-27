@@ -18,7 +18,7 @@ nunjucks.configure(path.resolve(__dirname,'public/views'),{
 }); 
 
 app.get("/",(req,res)=>{
-    res.status(200).render("index.html",{ title:"nunjucks", car:{name:"swift", power:82, torque: 112}, cars:["swift","i20","polo","baleno"], hybrid:true  });
+    res.status(200).render("index.html",{ title:"Express JS App", car:{name:"swift", power:82, torque: 112}, cars:["swift","i20","polo","baleno"], hybrid:true  });
 });
 app.get("/about",(req,res)=>{
     res.status(200).render("about.html",{ title:"About Us" });
